@@ -40,3 +40,14 @@ Also keep in mind that subdomains can have subdomains (example: _xmpp-server._tc
 ./subbrute.py gmail.com > gmail.out
 
 ./subbrute.py -t gmail.out
+
+## Docker install
+
+Subbrute is alaso available as a docker image. This image includes subbrute, python and all dependencies. It will run on any machine that runs docker.
+
+```
+docker pull menzo/subbrute
+docker run -t menzo/subbrute -t gmail.com
+```
+
+
